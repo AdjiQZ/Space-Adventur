@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Space Adventur</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h2>SPACE ADVENTUR</h2>
+    <button id="startButton">Mulai Permainan</button>
+    <h2>Score : <span id="score" document.getElementById("score").innerHTML = 0;>0</span></h2>
+    <div id="main" style="background-position-y: 0">
+      <div id="area">
+        <div id="plane" style="margin-left: 160px; margin-top: 400px"></div>
+        <div id="meteor" style="margin-top: 600px"></div>
+        <div id="meteor" style="margin-top: 600px"></div>
+      </div>
+    </div>
+    <!-- ... (kode HTML yang sudah ada) -->
+
+<button class="control-button" onclick="movePlane('up')">Atas</button>
+<button class="control-button" onclick="movePlane('down')">Bawah</button>
+<button class="control-button" onclick="movePlane('left')">Kiri</button>
+<button class="control-button" onclick="movePlane('right')">Kanan</button>
+
+<!-- ... (kode HTML yang sudah ada) -->
+
+    <audio id="backgroundAudio" autoplay loop>
+      <source src="sound/background.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="gameOverAudio" src="sound/destroyed.mp3" preload="auto"></audio>
+    <script src="game.js"></script>
+  </body>
+</html>
